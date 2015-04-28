@@ -25,7 +25,10 @@
   },
   "homepage": "https://github.com/citruz/podchcker",
   "dependencies": {
+    "colors": "^1.0.3",
     "line-reader": "^0.2.4",
-    "request": "^2.55.0"
+    "request": "^2.55.0",
+    "semver": "^4.3.3",
+    "underscore": "^1.8.3"
   }
 }
