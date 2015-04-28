@@ -11,7 +11,7 @@ var   _           = require('underscore'),
       semver      = require('semver');
 
 function printUsage() {
-  console.log("usage");
+  //console.log("usage"); TODO
   process.exit(2);
 }
 
@@ -140,16 +140,10 @@ function semverGt(v1, v2) {
 
 /* Program start */
 
+var filename = 'Podfile.lock'
 
-if (process.argv.length < 3) {
-  printUsage();
-}
-
-var filename = process.argv[2]
-var stat = fs.statSync(filename);
-
-if (!stat.isFile()) {
-  console.log("not a file");
+if (!fs.exists(filename) || !fs.statSync().isFile()) {
+  console.log('Podfile.lock not found. Please run pod install first.');
   printUsage();
 }
 
