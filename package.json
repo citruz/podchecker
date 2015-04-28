@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Check Cocoapod dependencies for new versions.",
   "main": "podchecker.js",
+  "preferGlobal": "true",
+  "bin": {
+    "podchecker": "podchecker.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -19,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/citruz/podchcker/issues"
   },
-  "homepage": "https://github.com/citruz/podchcker"
+  "homepage": "https://github.com/citruz/podchcker",
+  "dependencies": {
+    "line-reader": "^0.2.4",
+    "request": "^2.55.0"
+  }
 }
