@@ -142,7 +142,7 @@ function semverGt(v1, v2) {
 
 var filename = 'Podfile.lock'
 
-if (!fs.exists(filename) || !fs.statSync().isFile()) {
+if (!fs.existsSync(filename) || !fs.statSync(filename).isFile()) {
   console.log('Podfile.lock not found. Please run pod install first.');
   printUsage();
 }
