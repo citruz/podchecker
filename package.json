@@ -1,0 +1,23 @@
+{
+  "name": "podchecker",
+  "version": "0.0.1",
+  "description": "Check Cocoapod dependencies for new versions.",
+  "main": "podchecker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/citruz/podchcker.git"
+  },
+  "keywords": [
+    "cocoapod",
+    "dependencies"
+  ],
+  "author": "Felix Seele <fseele@gmail.com> (http://felixseele.de/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/citruz/podchcker/issues"
+  },
+  "homepage": "https://github.com/citruz/podchcker"
+}
