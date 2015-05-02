@@ -25,3 +25,7 @@ Dependencies out-of-date:
 IDMPhotoBrowser: 1.6.2 (1.4 installed)
 MagicalRecord: 2.2 (2.1 installed)
 ```
+
+## Release History
+
+* 0.1.0 Initial release

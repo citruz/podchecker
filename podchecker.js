@@ -37,13 +37,13 @@ function getPodsInstalled(filename, cb) {
 
 
     if (current) {   
-      var re = /^\s*- +(\w*) \((.*)\).*$/; 
+      var re = /^\s*- +(\w*)(?: \((.*)\))?.*$/; 
       var m;
 
       if ((m = re.exec(line)) !== null) {
         var podName = m[1], versionString = m[2];
 
-        var reVersion = /^.*?(\d(?:\.\d){0,2})$/;
+        var reVersion = /^.*?(\d+(?:\.\d+){0,2}(?:.*?))$/;
         var mVersion;
         var podVersion = null;
         if ((mVersion = reVersion.exec(versionString)) !== null) {

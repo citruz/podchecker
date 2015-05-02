@@ -1,7 +1,7 @@
 {
   "name": "podchecker",
-  "version": "0.0.1",
-  "description": "Check Cocoapod dependencies for new versions.",
+  "version": "0.1.0",
+  "description": "Check CocoaPods dependencies for new versions.",
   "main": "podchecker.js",
   "preferGlobal": "true",
   "bin": {
